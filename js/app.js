@@ -133,7 +133,7 @@ const app = {
     },
 
     gameOver: function () {
-        alert(`Partie terminée. Votre score : ${app.sequence.length}-3`);
+        alert(`Partie terminée. Votre score : ${app.sequence.length - 3}`);
         clearTimeout(app.idTimeout);
         app.showButton();
         app.sequence = [];
